@@ -1,0 +1,41 @@
+﻿@model ProductsModel
+@{
+    ViewData["Title"] = "Admin Products";
+}
+
+<h1>Admin Products</h1>
+<hr />
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td style="width:30px;">Id</td>
+            <td style="width:50px;">Image</td>
+            <td>Name</td>
+            <td style="width:100px;">Price</td>
+            <td style="width:150px;">Options</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prods in Model.Products)
+        {
+            <tr>
+                <td>@prods.Id</td>
+                <td><img src="~/img/@prods.ImgUrl" style="width:50px;" /></td>
+                <td>@prods.Name</td>
+                <td>@prods.Price</td>
+                <td>
+                   <a asp-controller="Admin" asp-action="EditProduct" asp-route-id="@prods.Id" class="btn btn-info btn-sm">Edit</a>
+
+                    <form asp-controller="Admin" asp-action="DeleteProduct" style="display:inline;">
+                        <input type="hidden" value="@prods.Id" name="id" /> 
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+<div page-model="@Model.PageModel"></div>

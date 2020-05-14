@@ -1,0 +1,40 @@
+﻿@model ProductsModel
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        @for (int i = 0; i < Model.Products.Count(); i++)
+        {
+            if (i == 0)
+            {
+                <li data-target="#demo" data-slide-to="@i" class="active"></li>
+            }
+            else
+            {
+                <li data-target="#demo" data-slide-to="@i"></li>
+            }
+        }
+    </ul>
+    <div class="carousel-inner">
+        @{ bool isActive = true;}
+        @foreach (var prods in Model.Products)
+        {
+        <div class="carousel-item @(isActive ? Html.Raw("active") : Html.Raw("") ) "  style="background-image:url(/img/@prods.ImgUrl);">
+            <a asp-controller="home" asp-action="details" asp-route-id="@prods.Id" alt="@prods.Name"> 
+                <img src="~/img/banner.png" class="d-block img-fluid" style="opacity:0.5;" />
+            </a>
+            @*<img style="width:100%; opacity:0.2;" src="~/img/banner.png" alt="@prods.Name">*@
+        </div>
+            isActive = false;
+        }
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+
+

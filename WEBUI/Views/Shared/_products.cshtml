@@ -1,0 +1,22 @@
+﻿@model Product
+<div class="col-md-4">
+    <img  class="card-img-top" src="~/img/@Model.ImgUrl" alt="Card Image"/>
+    <div class="card-body">
+        <h4>@Model.Name</h4>
+        <p class="text">@Html.Raw(Model.Description)</p>
+        <i class="text-muted">Price : @Model.Price</i>
+        <div class="card-footer">
+            <a asp-controller="Shop" asp-action="Details" asp-route-id="@Model.Id" class="btn btn-info btn-sm">Details</a>
+            @if (User.Identity.IsAuthenticated)
+            {
+                //formlarda her elemena blok halinde geldiginde alt alta gelir. yan yana getirmek icin displayinline kullaniriz
+                <form asp-controller="Cart" asp-action="AddToCart" method="post" style="display:inline;">
+                    <input type="hidden" name="productId" value="@Model.Id" />
+                    <input type="hidden" name="quantity" value="1" />
+                    <button type="submit" class="btn btn-info btn-sm ml-3">AddToCart</button>
+                </form>
+            }
+
+        </div>
+    </div>
+</div>

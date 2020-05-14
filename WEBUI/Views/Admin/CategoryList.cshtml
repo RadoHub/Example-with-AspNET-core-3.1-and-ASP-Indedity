@@ -1,0 +1,35 @@
+﻿@model CategoryListModel
+@{
+    ViewData["Title"] = "CategoryList";
+}
+
+<h1>Category List</h1>
+<hr />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td style="width:50px;">CategoryId</td>
+            <td>Category Name</td>
+            <td style="width:150px;">Options</td>
+        </tr>
+    </thead>
+    <thead>
+        @foreach (var cats in Model.Categories)
+        {
+            <tr>
+                <td>@cats.Id</td>
+                <td>@cats.Name</td>
+                <td>
+                    <a class="btn btn-info btn-sm" asp-controller="Admin" asp-action="EditCategory" asp-route-categoryId="@cats.Id">Edit</a>
+
+
+                    <form asp-action="deletecategory" asp-controller="Admin" method="post" style="display:inline;">
+                        <input type="hidden" value="@cats.Id" name="categoryId" />
+                        <button class="btn btn-danger btn-sm" type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </thead>
+</table>
+<div page-model="@Model.PageInfo"></div>

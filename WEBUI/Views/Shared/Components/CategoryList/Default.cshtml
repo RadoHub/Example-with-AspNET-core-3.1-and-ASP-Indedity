@@ -1,0 +1,12 @@
+﻿@model CategoriesMenuModels
+
+<div class="list-group">
+    @foreach (var cats in Model.Categories)
+    {
+        <a asp-controller="Shop" asp-action="List" asp-route-id="@cats.Id" class="list-group-item  list-group-item-action @(Convert.ToInt32(Model.CurrentCategoryId)== Convert.ToInt32(cats.Id) ? "active": "")">
+            @cats.Name
+            </a>
+    }
+</div>
+<div> Category Id : @Model.CurrentCategoryId </div>
+

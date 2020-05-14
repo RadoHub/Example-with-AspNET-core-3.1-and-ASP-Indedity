@@ -1,0 +1,59 @@
+﻿@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h1>Register</h1>
+@section ValidationScripts {
+
+    <script src="/modules/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="/modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <form asp-controller="Account" asp-action="Register" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group row">
+                <label asp-for="FullName" class="col-md-2"></label>
+                <div class="col-md-10">
+                    <input asp-for="FullName"  value="@Model.FullName" class="form-control" />
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="UserName" class="col-md-2"></label>
+                <div class="col-md-10">
+                    <input asp-for="UserName"  value="@Model.UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Password" class="col-md-2"></label>
+                <div class="col-md-10">
+                    <input asp-for="Password"  value="@Model.Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="RePassword" class="col-md-2"></label>
+                <div class="col-md-10">
+                    <input asp-for="RePassword" t value="@Model.RePassword" class="form-control" />
+                    <span asp-validation-for="RePassword" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Email" class="col-md-2"></label>
+                <div class="col-md-10">
+                    <input asp-for="Email"  value="@Model.Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row float-right">
+                <button type="submit" class="btn btn-sm btn-info ">Register Now</button>
+            </div>
+        </form>
+    </div>
+</div>
+
