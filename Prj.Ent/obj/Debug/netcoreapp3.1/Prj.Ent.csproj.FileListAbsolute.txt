@@ -1,0 +1,17 @@
+C:\Users\RADO\Desktop\cleanproje\CleanProje\Prj.Ent\bin\Debug\netcoreapp3.1\Prj.Ent.deps.json
+C:\Users\RADO\Desktop\cleanproje\CleanProje\Prj.Ent\bin\Debug\netcoreapp3.1\Prj.Ent.dll
+C:\Users\RADO\Desktop\cleanproje\CleanProje\Prj.Ent\bin\Debug\netcoreapp3.1\Prj.Ent.pdb
+C:\Users\RADO\Desktop\cleanproje\CleanProje\Prj.Ent\obj\Debug\netcoreapp3.1\Prj.Ent.csproj.CoreCompileInputs.cache
+C:\Users\RADO\Desktop\cleanproje\CleanProje\Prj.Ent\obj\Debug\netcoreapp3.1\Prj.Ent.AssemblyInfoInputs.cache
+C:\Users\RADO\Desktop\cleanproje\CleanProje\Prj.Ent\obj\Debug\netcoreapp3.1\Prj.Ent.AssemblyInfo.cs
+C:\Users\RADO\Desktop\cleanproje\CleanProje\Prj.Ent\obj\Debug\netcoreapp3.1\Prj.Ent.dll
+C:\Users\RADO\Desktop\cleanproje\CleanProje\Prj.Ent\obj\Debug\netcoreapp3.1\Prj.Ent.pdb
+C:\Users\Rado\desktop\cleanproje\cleanproje\Prj.Ent\obj\Debug\netcoreapp3.1\Prj.Ent.csprojAssemblyReference.cache
+C:\Users\Rado\Desktop\CleanProje\Prj.Ent\bin\Debug\netcoreapp3.1\Prj.Ent.deps.json
+C:\Users\Rado\Desktop\CleanProje\Prj.Ent\bin\Debug\netcoreapp3.1\Prj.Ent.dll
+C:\Users\Rado\Desktop\CleanProje\Prj.Ent\bin\Debug\netcoreapp3.1\Prj.Ent.pdb
+C:\Users\Rado\Desktop\CleanProje\Prj.Ent\obj\Debug\netcoreapp3.1\Prj.Ent.csproj.CoreCompileInputs.cache
+C:\Users\Rado\Desktop\CleanProje\Prj.Ent\obj\Debug\netcoreapp3.1\Prj.Ent.AssemblyInfoInputs.cache
+C:\Users\Rado\Desktop\CleanProje\Prj.Ent\obj\Debug\netcoreapp3.1\Prj.Ent.AssemblyInfo.cs
+C:\Users\Rado\Desktop\CleanProje\Prj.Ent\obj\Debug\netcoreapp3.1\Prj.Ent.dll
+C:\Users\Rado\Desktop\CleanProje\Prj.Ent\obj\Debug\netcoreapp3.1\Prj.Ent.pdb
