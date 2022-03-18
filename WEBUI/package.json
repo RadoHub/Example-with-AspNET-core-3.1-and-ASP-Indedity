@@ -8,6 +8,6 @@
     "jquery": "3.4.1",
     "jquery-validation": "1.19.1",
     "jquery-validation-unobtrusive": "3.2.11",
-    "ckeditor4": "4.14.0"
+    "ckeditor4": "4.18.0"
   }
 }
